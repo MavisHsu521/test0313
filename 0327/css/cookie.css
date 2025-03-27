@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: 20px;
+  right: calc(50% - 175px);
+  max-width: 350px;
+  width: 350px;
+  border-radius: 16px;
+  z-index: 999;
+  padding: 20px;
+}
+.cookie-container::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+.cookie-container .content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.cookie-container .content p {
+  margin-bottom: 16px;
+}
+.cookie-container .content .actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cookie-container .content .actions button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: all 0.2s ease-in;
+  border: 1px solid rgb(59, 130, 220);
+}
+.cookie-container .content .actions button:hover {
+  transform: translateY(-5px);
+}
+.cookie-container .content .actions #accept-all {
+  background-color: rgb(59, 130, 220);
+}
+.cookie-container .content .actions #accept-necessary {
+  background-color: rgb(232, 242, 251);
+}/*# sourceMappingURL=cookie.css.map */
