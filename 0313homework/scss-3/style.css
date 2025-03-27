@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100svh;
+}
+
 .header {
   background-color: rgb(76, 175, 80);
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 20px;
-}
-
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100svh;
 }
 
 .container {
