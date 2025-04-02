@@ -39,8 +39,8 @@ let buyBtns = Array.from(document.querySelectorAll(".buy-btn"));
 
 function send() {
   console.log(this.dataset.id);
-  const product = item.find((i) => i.id === id);
 
+  console.log(product);
   alert("商品編號" + this.dataset.id);
   alert("您已購買商品" + this.dataset.product);
 }
