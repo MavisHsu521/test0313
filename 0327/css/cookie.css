@@ -11,9 +11,9 @@ body {
 .cookie-container {
   position: fixed;
   bottom: 20px;
-  right: calc(50% - 175px);
+  right: 50%;
+  transform: translateX(50%);
   max-width: 350px;
-  width: 350px;
   border-radius: 16px;
   z-index: 999;
   padding: 20px;

@@ -96,7 +96,7 @@ acceptAll.addEventListener("click", addCookie);
 
 acceptNecessary.addEventListener("click", addCookie);
 
-// deleteCookie("cookie_consent"); //這是用來測試時刪除資料的;
+deleteCookie("cookie_consent"); //這是用來測試時刪除資料的;
 
 // 問題在這邊 我多打了一個;符號
 // getCookie("cookie_consent;");

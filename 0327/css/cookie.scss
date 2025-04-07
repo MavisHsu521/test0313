@@ -19,9 +19,10 @@ body {
 .cookie-container {
   position: fixed;
   bottom: 20px;
-  right: calc(50% - 175px);
+  right: calc(50%);
+  transform: translateX(50%); //剛剛好就是往右邊移動50%半徑
   max-width: 350px;
-  width: 350px;
+  // width: 350px;
   border-radius: 16px;
 
   // transform: translateX(50%);
