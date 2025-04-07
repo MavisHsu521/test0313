@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    border: 1px solid grey;
+    text-align: center;
+    .buy-btn {
+        margin-top: 50px;
+    }
+}

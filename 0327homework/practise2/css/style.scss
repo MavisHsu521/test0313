@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$bg: rgb(248, 218, 154);
+$btnDarkBlue: rgb(39, 134, 241);
+$btnLightBlue: rgb(157, 198, 245);
+$white: rgb(255,255,255);
+$whiteA: rgba(255,255,255,0.95);
+
+body {
+    background-color: $bg;
+}
+
+
+  .cookie-container {
+    position: fixed;
+    bottom: 20px;
+    right: calc(50% - 200px);
+    width: 400px;
+    border-radius: 16px;
+    z-index: 999;
+    padding: 20px;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $whiteA;
+        inset: 0px;
+        z-index: -1;
+        border-radius: 16px;
+    }
+
+    .content {
+      h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button {
+            border: 1px solid $btnDarkBlue;
+            border-radius: 8px;
+            padding: 12px 24px;
+            cursor: pointer;
+            min-width: 120px;
+            transition: all 0.2s ease-in-out;
+            color: $white;
+            &:hover {
+                background-color: $btnDarkBlue;
+                transform: translateY(-2px);
+            }
+        }
+
+        #accept-all {
+            background-color: $btnDarkBlue;
+          &:hover {}
+          &:active {}
+          &:focus {}
+        }
+
+        #accept-necessary {
+            background-color: $btnLightBlue;
+        }
+
+      }
+    }
+  }
+
