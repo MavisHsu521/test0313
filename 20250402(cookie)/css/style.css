@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 218, 154);
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: 20px;
+  right: calc(50% - 200px);
+  width: 400px;
+  border-radius: 16px;
+  z-index: 999;
+  padding: 20px;
+}
+.cookie-container::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  inset: 0px;
+  z-index: -1;
+  border-radius: 16px;
+}
+.cookie-container .content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.cookie-container .content p {
+  margin-bottom: 16px;
+}
+.cookie-container .content .actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cookie-container .content .actions {
+    flex-direction: column;
+  }
+}
+.cookie-container .content .actions button {
+  border: 1px solid rgb(39, 134, 241);
+  border-radius: 8px;
+  padding: 12px 24px;
+  min-width: 120px;
+  transition: all 0.2s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+.cookie-container .content .actions button:hover {
+  background-color: rgb(39, 134, 241);
+  transform: translateY(-2px);
+}
+.cookie-container .content .actions #accept-all {
+  background-color: rgb(39, 134, 241);
+}
+.cookie-container .content .actions #accept-necessary {
+  background-color: rgb(157, 198, 245);
+}/*# sourceMappingURL=style.css.map */
