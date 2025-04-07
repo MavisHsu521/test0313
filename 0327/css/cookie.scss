@@ -1,3 +1,11 @@
+$mobile: 768px;
+@mixin mobile {
+  @media (max-width: $mobile) {
+    // font-size: 24px;
+    @content;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -15,6 +23,8 @@ body {
   max-width: 350px;
   width: 350px;
   border-radius: 16px;
+
+  // transform: translateX(50%);
   z-index: 999;
   //   background-color: rgb(13, 49, 255);
   padding: 20px;
@@ -46,6 +56,14 @@ body {
       gap: 16px;
       flex-wrap: wrap;
 
+      // @media (max-width: 768px) {
+      //   flex-direction: column;
+      // }
+
+      @include mobile {
+        flex-direction: column;
+      }
+
       button {
         // border: none;
         padding: 12px 24px;
@@ -60,7 +78,7 @@ body {
         }
       }
       #accept-all {
-        background-color: rgb(59, 130, 220);
+        background-color: #0984e3;
         &:hover {
         }
         &:active {
@@ -74,3 +92,13 @@ body {
     }
   }
 }
+
+// @media (max-width: 768px) {
+//   .cookie-container {
+//     .content {
+//       .actions {
+//         flex-direction: column;
+//       }
+//     }
+//   }
+// }

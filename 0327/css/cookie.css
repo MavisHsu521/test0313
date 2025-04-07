@@ -39,6 +39,11 @@ body {
   gap: 16px;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .cookie-container .content .actions {
+    flex-direction: column;
+  }
+}
 .cookie-container .content .actions button {
   padding: 12px 24px;
   border-radius: 8px;
@@ -51,7 +56,7 @@ body {
   transform: translateY(-5px);
 }
 .cookie-container .content .actions #accept-all {
-  background-color: rgb(59, 130, 220);
+  background-color: #0984e3;
 }
 .cookie-container .content .actions #accept-necessary {
   background-color: rgb(232, 242, 251);
